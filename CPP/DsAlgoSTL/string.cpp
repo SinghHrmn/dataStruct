@@ -9,7 +9,7 @@ Headers to include:
 <cstring>
 
 Methods discussed are :
-.lenght() | returns the length of string
+.length() | returns the length of string
 getline() | taking input from user
 sort()    | for sorting strings lexiographically
 */
