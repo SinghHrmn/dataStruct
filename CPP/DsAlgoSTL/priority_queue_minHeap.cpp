@@ -5,7 +5,7 @@ using namespace std;
 /*
 
 Priority Queue is implemented using heap. Time taken to create a heap using heapify is O(Log N). 
-When the samller number has highest  priority it is Min Heap. We will discuss min heap in this example code.
+When the smaller number has highest  priority it is Min Heap. We will discuss min heap in this example code.
 
 Headers to include:
     <queue>
@@ -41,4 +41,30 @@ int main()
 
     //Output:
     // 5,6,9,11,17,18,
+
+    /* 
+    For a custom comparator function in creating priority_queue we need functors.
+
+    Functors :  Functional objects.
+
+    Functors are basically a class object with operator() overloaded on them. so the behave like functions.
+
+    Example:
+    */
+
+    class Hello
+    {
+    public:
+        //method to overload () operator
+        void operator()()
+        {
+            cout << "Hello World";
+        }
+    };
+
+    //initialize class object
+    Hello H;
+
+    //calling that object as function | functors
+    H();
 }
