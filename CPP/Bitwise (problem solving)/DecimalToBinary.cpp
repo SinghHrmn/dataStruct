@@ -14,6 +14,7 @@ int decimaltobinary(int number)
     {
         ans = ans + p * (number & 1);
         p = p * 10;
+        number = number >> 1;
     }
     return ans;
 }
