@@ -7,23 +7,23 @@ In this program we will discuss about strtok() function's own implementation
 */
 char *mystrtok(char str[], char delim)
 {
-    static char *input = str;
+    static char *input = NULL;
     if (str != NULL)
     {
         input = str;
     }
-    if (str == NULL)
+    if (input == NULL)
     {
-        input = NULL;
+        return NULL;
     }
 
-    char *output = new char[strlen(str) + 1];
+    char *output = new char[strlen(input) + 1];
     int i;
-    for (i = 0; str[i] != '\0'; i++)
+    for (i = 0; input[i] != '\0'; i++)
     {
-        if (str[i] != delim)
+        if (input[i] != delim)
         {
-            output[i] = str[i];
+            output[i] = input[i];
         }
         else
         {
@@ -34,6 +34,7 @@ char *mystrtok(char str[], char delim)
     }
     output[i] = '\0';
     input = NULL;
+    return output;
 }
 
 int main()
@@ -45,7 +46,6 @@ int main()
 
     char *ptr;
     ptr = mystrtok(s, ' ');
-
     cout << ptr << endl;
 
     while (ptr != NULL)
