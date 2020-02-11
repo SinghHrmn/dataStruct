@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-bool checkPermutation(char s1[], char s2[])
+bool checkPermutation(char *s1, char *s2)
 {
     int l1 = strlen(s1);
     int l2 = strlen(s2);
