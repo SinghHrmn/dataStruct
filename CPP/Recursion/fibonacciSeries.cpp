@@ -5,14 +5,11 @@ using namespace std;
 int fibo(int num)
 {
     // base case
-    if (num == 0)
+    if (num == 0 || num == 1)
     {
-        return 0;
+        return num;
     }
-    else if (num == 1)
-    {
-        return 1;
-    }
+
     else
     {
         long ans = fibo(num - 1) + fibo(num - 2);
@@ -29,6 +26,7 @@ int main()
 
     for (int i = 1; i <= num; i++)
     {
+        // fibo will return the ith fibonacci number
         cout << fibo(i) << ", ";
     }
 }
