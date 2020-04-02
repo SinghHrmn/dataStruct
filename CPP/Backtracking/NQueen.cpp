@@ -63,7 +63,7 @@ bool solvenQueen(int board[100][100], int R, int N)
             {
                 if (board[i][j] == 1)
                 {
-                    cout << " Q";
+                    cout << " Q ";
                 }
                 else
                 {
@@ -73,7 +73,7 @@ bool solvenQueen(int board[100][100], int R, int N)
             cout << "\n";
         }
         cout << "\n";
-        return true;
+        return false;
     }
 
     // Recursive Case
@@ -84,8 +84,7 @@ bool solvenQueen(int board[100][100], int R, int N)
         if (queenSafe(board, R, C, N))
         {
             // Place the Queen
-            board[R][C] == 1;
-            cout << " placed a queen at" << R << " " << C << endl;
+            board[R][C] = 1;
 
             // Call for the remaining Board
             if (solvenQueen(board, R + 1, N))
@@ -94,7 +93,7 @@ bool solvenQueen(int board[100][100], int R, int N)
             }
 
             // else --> Backtrack
-            board[R][C] == 0;
+            board[R][C] = 0;
         }
     }
     return false;
