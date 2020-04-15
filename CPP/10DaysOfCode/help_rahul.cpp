@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Link to the problem statement
+// https://hack.codingblocks.com/app/practice/6/1044/problem
+
 int find_key(int a[], int s, int end, int key)
 {
 
