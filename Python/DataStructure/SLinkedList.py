@@ -12,5 +12,5 @@ a.nextnode = b
 b.nextnode = c
 c.nextnode = d
 
-a.nextnode.value
+print(a.nextnode.value)
 # prints 2
