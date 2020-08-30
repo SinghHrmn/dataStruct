@@ -25,9 +25,9 @@ Interesting Properties
 
 Zeckendorf's Theorem : Each positive number can be written in a unique way as sum of one or more fibonacci numbers such that sum doesn't include any consecutive numbers.
 
-100 = 89 + 8 + 3
-77 = 55 + 21 + 1
-17 = 13 + 3 + 1
+- 100 = 89 + 8 + 3
+- 77 = 55 + 21 + 1
+- 17 = 13 + 3 + 1
 
 Pisano Period:
 Last 1/2/3/4 digit(s) of fibonacci number repeat with period of
@@ -35,3 +35,14 @@ Last 1/2/3/4 digit(s) of fibonacci number repeat with period of
 
 ---------------------------------------------------------------------
 
+Catlan Series 
+-------------
+
+catlan series: 1,1,2,5,14,42,132,............
+
+1) Direct formula: C(2n, n)/(n+1)
+2) Recursive relation
+
+Q) Count the no. of BST's with N nodes.
+
+------------------------------------------------------------------
