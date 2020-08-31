@@ -23,13 +23,13 @@ How to Compute
 Interesting Properties
 ----------------------
 
-Zeckendorf's Theorem : Each positive number can be written in a unique way as sum of one or more fibonacci numbers such that sum doesn't include any consecutive numbers.
+**Zeckendorf's Theorem** : Each positive number can be written in a unique way as sum of one or more fibonacci numbers such that sum doesn't include any consecutive numbers.
 
 - 100 = 89 + 8 + 3
 - 77 = 55 + 21 + 1
 - 17 = 13 + 3 + 1
 
-Pisano Period:
+**Pisano Period**:
 Last 1/2/3/4 digit(s) of fibonacci number repeat with period of
 60/300/1500/15000 respectively.
 
